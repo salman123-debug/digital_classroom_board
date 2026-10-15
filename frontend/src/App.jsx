@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { io } from "socket.io-client";
 
-const SOCKET_URL = "http://localhost:5000";
+const SOCKET_URL =   import.meta.env.VITE_SERVER_URL || "http://localhost:5000";
 const buttonBase = "rounded-lg px-3 py-2 text-sm font-semibold transition";
 const buttonOn = "bg-blue-600 text-white";
 const buttonOff = "border border-slate-200 bg-white hover:bg-slate-50";
